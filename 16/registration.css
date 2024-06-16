@@ -1,0 +1,494 @@
+/*header*/
+/*general-block*/
+/*category-block*/
+/*items-block*/
+/*footer*/
+/*768px*/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container-big {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-color {
+  background-color: #F8F3F4;
+}
+
+.container-color-img {
+  background-color: #F7F7F7;
+}
+
+.container-footer {
+  background-color: #222224;
+}
+
+.header-block {
+  background-color: #222222;
+  min-height: 75px;
+}
+
+.header-group {
+  display: flex;
+  padding-top: 18px;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-left__logo {
+  margin-right: 41px;
+}
+
+.header-left__lupa {
+  padding-top: 10px;
+}
+
+.header-right__burger {
+  padding-top: 10px;
+  margin-right: 33px;
+}
+
+.header-right__people {
+  padding-top: 8px;
+  margin-right: 33px;
+}
+
+.header-right__korzina {
+  padding-top: 8px;
+  margin-right: 33px;
+}
+
+.arrivals {
+  min-height: 148px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.arrivals__title {
+  margin: 0;
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+.registration {
+  display: flex;
+  margin-bottom: 96px;
+}
+
+.registration-left {
+  max-width: 360px;
+  margin-right: 128px;
+}
+
+.registration-title {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.registration__input-first-name {
+  box-sizing: border-box;
+  border: 1px solid #A4A4A4;
+  min-width: 360px;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.registration__input-first-name-placeholder {
+  position: relative;
+  top: -34px;
+  right: -15px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.registration__input-second-name {
+  box-sizing: border-box;
+  border: 1px solid #A4A4A4;
+  min-width: 360px;
+  min-height: 45px;
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+}
+
+.registration__input-second-name-placeholder {
+  position: relative;
+  top: -44px;
+  right: -15px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.registration__radiobuttons {
+  margin-bottom: 33px;
+}
+
+.registration__male-title {
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  position: relative;
+  top: -2px;
+}
+
+.registration__female-title {
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+}
+
+.registration__female-title {
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  position: relative;
+  top: -2px;
+}
+
+.registration-title-login {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #222222;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.registration__input-email {
+  box-sizing: border-box;
+  border: 1px solid #A4A4A4;
+  min-width: 360px;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.registration__input-email-placeholder {
+  position: relative;
+  top: -32px;
+  right: -15px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.registration__input-password {
+  box-sizing: border-box;
+  border: 1px solid #A4A4A4;
+  min-width: 360px;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.registration__input-password-placeholder {
+  position: relative;
+  top: -32px;
+  right: -15px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.registration-help {
+  margin: 0;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+}
+
+.registration-button {
+  background-color: #F16D7F;
+  color: white;
+  border: 0;
+  min-height: 50px;
+  min-width: 167px;
+  cursor: pointer;
+}
+
+.registration-loyality {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.registration-description {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.registration-items {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #000000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.registration-item {
+  margin-bottom: 16px;
+}
+
+.registration-item-icon {
+  margin-right: 22px;
+}
+
+.footer-middle {
+  background-image: url("images/footer-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 448px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-middle-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px;
+}
+
+.footer-middle-left__image {
+  max-width: 96px;
+  padding-left: 130px;
+}
+
+.footer-middle-left__description {
+  font-family: Lato;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  max-width: 359px;
+}
+
+.footer-middle-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-middle-right__subscribe {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.footer-middle-right__description {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.footer-middle-right__form-block-field {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: relative;
+}
+
+.footer-middle-right__input {
+  min-width: 256px;
+  min-height: 49px;
+  border: 0;
+  border-radius: 30px 0 0 30px;
+  background-color: #E1E1E1;
+}
+
+.footer-middle-right__placeholder {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #222224;
+}
+
+.footer-middle-right__button {
+  position: absolute;
+  right: 1px;
+  background-color: #F16D7F;
+  min-width: 100px;
+  min-height: 49px;
+  border: 0;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  min-height: 79px;
+}
+
+.footer-bottom__rights {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FBFBFB;
+  padding-left: 235px;
+}
+
+.footer-bottom__icons {
+  margin-left: auto;
+  margin-right: 230px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .header-left {
+    padding-left: 16px;
+  }
+  .header-right__people {
+    display: none;
+  }
+  .header-right__korzina {
+    display: none;
+  }
+  .header-right__burger {
+    margin-right: 16px;
+  }
+  .arrivals {
+    justify-content: center;
+  }
+  .registration {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .registration-left {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .registration-right {
+    max-width: 358px;
+  }
+  .registration-loyality {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+  .registration-description {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+  .registration-items {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+  .footer-top {
+    flex-direction: column;
+    padding-top: 48px;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-card {
+    margin: 0;
+    margin-bottom: 48px;
+    max-width: 320px;
+  }
+  .top-card:last-child {
+    margin-bottom: 81px;
+  }
+  .footer-middle {
+    flex-direction: column;
+    background-image: url("images/footer-background-phone.png");
+  }
+  .footer-middle-left {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+  .footer-middle-left__image {
+    padding-top: 64px;
+    margin-bottom: 30px;
+  }
+  .footer-middle-right {
+    margin-bottom: 109px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-bottom__icons {
+    margin: 0;
+    order: 1;
+    padding-top: 43px;
+    margin-bottom: 40px;
+  }
+  .footer-bottom__rights {
+    padding: 0;
+    margin-bottom: 9px;
+  }
+  .footer-bottom__rights-block {
+    order: 2;
+  }
+}/*# sourceMappingURL=registration.css.map */
