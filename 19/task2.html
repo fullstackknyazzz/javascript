@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы</title>
+  <style>
+    #reviews-container {
+      margin-top: 20px;
+    }
+    .review {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <textarea id="review-input" placeholder="Введите ваш отзыв"></textarea>
+    <button onclick="addReview()">Отправить отзыв</button>
+  </div>
+  <div id="reviews-container"></div>
+
+  <script>
+    const initialData = [
+      {
+        product: "Apple iPhone 13",
+        reviews: [
+          {
+            id: "1",
+            text: "Отличный телефон! Батарея держится долго.",
+          },
+          {
+            id: "2",
+            text: "Камера супер, фото выглядят просто потрясающе.",
+          },
+        ],
+      },
+      {
+        product: "Samsung Galaxy Z Fold 3",
+        reviews: [
+          {
+            id: "3",
+            text: "Интересный дизайн, но дорогой.",
+          },
+        ],
+      },
+      {
+        product: "Sony PlayStation 5",
+        reviews: [
+          {
+            id: "4",
+            text: "Люблю играть на PS5, графика на высоте.",
+          },
+        ],
+      },
+    ];
+
+    function loadInitialReviews(data) {
+      const container = document.getElementById('reviews-container');
+      data.forEach(product => {
+        product.reviews.forEach(review => {
+          const reviewElement = document.createElement('div');
+          reviewElement.className = 'review';
+          reviewElement.textContent = review.text;
+          container.appendChild(reviewElement);
+        });
+      });
+    }
+
+    function addReview() {
+      const input = document.getElementById('review-input');
+      const text = input.value.trim();
+
+      try {
+        if (text.length < 50 || text.length > 500) {
+          throw new Error("Review must be between 50 and 500 characters.");
+        }
+
+        const container = document.getElementById('reviews-container');
+        const reviewElement = document.createElement('div');
+        reviewElement.className = 'review';
+        reviewElement.textContent = text;
+        container.appendChild(reviewElement);
+
+        input.value = ''; // Очистка поля ввода
+      } catch (error) {
+        alert(error.message);
+      }
+    }
+
+    // Загрузка начальных данных при запуске приложения
+    window.onload = () => loadInitialReviews(initialData);
+  </script>
+</body>
+</html>
