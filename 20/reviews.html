@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр отзывов</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product {
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .review {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    .review button {
+      margin-left: 10px;
+      padding: 3px 7px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Отзывы</h1>
+    <div id="reviews-container"></div>
+    <a href="index.html">Назад к добавлению отзывов</a>
+  </div>
+
+  <script>
+    const reviewsContainer = document.getElementById('reviews-container');
+    const reviews = JSON.parse(localStorage.getItem('reviews')) || {};
+
+    function renderReviews() {
+      reviewsContainer.innerHTML = '';
+
+      Object.keys(reviews).forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product');
+        productElement.innerText = product;
+
+        productElement.addEventListener('click', function() {
+          const reviewsList = document.createElement('div');
+          reviews[product].forEach((review, index) => {
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+            reviewElement.innerHTML = `
+              <span>${review}</span>
+              <button onclick="deleteReview('${product}', ${index})">Удалить</button>
+            `;
+            reviewsList.appendChild(reviewElement);
+          });
+
+          productElement.appendChild(reviewsList);
+        });
+
+        reviewsContainer.appendChild(productElement);
+      });
+    }
+
+    function deleteReview(product, index) {
+      reviews[product].splice(index, 1);
+
+      if (reviews[product].length === 0) {
+        delete reviews[product];
+      }
+
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+      renderReviews();
+    }
+
+    renderReviews();
+  </script>
+</body>
+</html>
